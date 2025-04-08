@@ -68,6 +68,10 @@ urlpatterns = [
     ),
     path("api/group/", include("apps.group.api_urls", namespace="group_api")),
     path(
+        "api/shortcut/",
+        include("apps.shortcut.api_urls", namespace="shortcut_api"),
+    ),
+    path(
         "api/signature/",
         include("apps.signature.api_urls", namespace="signature_api"),
     ),
